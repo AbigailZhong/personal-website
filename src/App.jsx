@@ -1,5 +1,5 @@
 import "./App.css";
-import wicclogo from "/src/img/wicc_logo.png";
+import pfp from "/src/img/profile.png";
 import githublogo from "/src/img/github.svg";
 import instalogo from "/src/img/instagram.svg";
 import figmalogo from "/src/img/figma.svg";
@@ -14,22 +14,19 @@ function App() {
     <>
       <section className="h-screen w-[80%] flex mx-auto items-center">
         <div className="h-auto flex flex-row sm:flex-col-reverse space-x-10 sm:space-x-0 ">
-          <div className="flex flex-col justify-center space-y-5 text-base">
+          <div className="flex flex-col justify-center space-y-5 text-base w-[70%]">
             {/* TODO 1: Edit the content of these tags!*/}
-            <h1>Hi! I'm ______</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum ac ante eget arcu ultrices eleifend. Curabitur
-              tincidunt, quam non consequat cursus, nibh velit ultricies lorem,
-              et accumsan augue justo a diam.
+            <h1 className="font-bold animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5">Hi! I'm Abigail Z</h1>
+            <p className="font-medium">
+              I'm a visual designer based in NY.
             </p>
-            <div className="flex flex-row items-center space-x-2">
+            <div className="flex flex-row items-center space-x-2 ">
               <img src={location} />
-              <p>Ithaca, United States</p>
+              <p className="font-medium">Ithaca, United States</p>
             </div>
             <div className="flex flex-row items-center">
               <div className="h-2 w-2 bg-green-500 rounded-full mr-2"></div>
-              <p>Avaliable for new projects</p>
+              <p className="font-medium">Avaliable for new projects</p>
             </div>
 
             {/* TODO 2: Change the links of these tags to link to your socials! */}
@@ -51,14 +48,14 @@ function App() {
           <div className="flex justify-center ">
             {/* TODO 3: Change this to a custom image! */}
             <img
-              src={wicclogo}
-              alt="WICC Logo"
-              className="object-contain sm:p-10"
+              src={pfp}
+              alt="Abigail Z profile image"
+              className="object-contain sm:p-10 rounded-full"
             />
           </div>
         </div>
       </section>
-      <section className="bg-[#9CE2D3] min-h-screen w-screen flex justify-center rounded-t-3xl p-10 ">
+      <section className="bg-[#4e463f] min-h-screen w-screen flex justify-center rounded-t-3xl p-10 ">
         <div className="flex flex-col items-center space-y-5 w-full">
           <div className="flex text-3xl font-medium">Experience</div>
           {/* TODO 4: Add your work experience here by editing the json files in src/data/experiences.json */}
